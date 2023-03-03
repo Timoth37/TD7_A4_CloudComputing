@@ -1,0 +1,24 @@
+version: '3'
+services:
+  mongodb:
+    image: mongo
+    volumes:
+      - mymongovolume:/data/db
+    networks:
+      - network-td6
+  app-flask:
+    image: image-td6
+    ports:
+      - "5000:5000"
+    links:
+      - mongodb
+    volumes:
+      - C:/Users/galla/Desktop/A4/Cloud Computing/TD6/TD6_Docker/file.txt:/data/file.txt
+    networks:
+      - network-td6
+volumes:
+  mymongovolume:
+
+networks:
+  network-td6:
+    name: network-td6

@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Brand</title>
+  </head>
+  <body>
+    <h1>Informations about the brands found</h1>
+	{% for objet in objets %}
+    <table>
+      <tr>
+        <td>Brand ID : </td>
+        <td>{{ objet._id }} </td>
+      </tr>
+      <tr>
+        <td>Brand Name : </td>
+        <td>{{ objet.name }}</td>
+      </tr>
+      <tr>
+        <td>Brand Price : </td>
+        <td>{{ objet.price }}</td>
+      </tr>
+      <tr>
+        <td>Brand Origine : </td>
+        <td>{{ objet.country }}</td>
+      </tr>
+    </table>
+    {% endfor %}
+  </body>
+</html>
+
+<style>
+	body{
+		text-align: center;
+		background: black;
+		color: white;
+	}
+	table{
+		padding: 10px;
+		margin: 20px auto;
+		width: 60%;
+		border-radius : 10px;
+		background: lightgray;
+		color: black;
+		font-size: 20px;
+	}
+</style>
