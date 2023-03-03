@@ -34,3 +34,8 @@ Run the command `db.marques.insertMany([{"name" : "Nike", "price": 50, "country"
 {"name" : "Zara", "price": 40, "country": "Espagne"}])`
 
 Your database is now populated. 
+
+### Visit your work
+
+On a browser, visit http://localhost:5000.> On the main, route, you'll see the differents elements of your database. 
+On the 
