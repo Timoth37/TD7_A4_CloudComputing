@@ -1,5 +1,10 @@
 # Dockerisation d'une application Flask et de sa base de donnée
 
+### Initialization
+
+Create a folder named "TD6_Docker" on your host. 
+In this folder, open a command line tool and run the command : 
+"git clone 
 
 ### Get the mongo and python image from Docker Public Registry
 
