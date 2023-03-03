@@ -37,5 +37,10 @@ Your database is now populated.
 
 ### Visit your work
 
-On a browser, visit http://localhost:5000.\n On the main, route, you'll see the differents elements of your database. 
-On the 
+On a browser, visit http://localhost:5000.
+
+On the main, route, you'll see the differents elements of your database. 
+
+On the /file route, you'll see the content of the file.txt of the folder. 
+
+You can modify the content of file.txt, refresh the web page and see the difference. 
